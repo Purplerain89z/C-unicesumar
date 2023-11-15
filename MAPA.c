@@ -25,6 +25,8 @@ bool verificarDisponibilidade(int diaAgenda, int horaAgenda){
 
 void agendarConsulta(){
 
+	setlocale(LC_ALL, "");
+
 	int diaAgenda;
 	printf("Qual dia do mês você quer agendar?\n");
 	fflush(stdin);
