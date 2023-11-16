@@ -14,8 +14,8 @@ int main() {
 	scanf("%f", &juros);
 	ren = dep * (juros /100);
 	total = dep + ren;
-    printf("o total de rendimentos é %.2f.", ren);
-	printf("Total de dinheiro na sua conta com os rendimentos é  %.2f.\n", total);
+    printf("o total de rendimentos é R$ %.2f.\n", ren);
+	printf("Total de dinheiro na sua conta com os rendimentos é R$ %.2f.\n", total);
 	
 	
 	return (0);
