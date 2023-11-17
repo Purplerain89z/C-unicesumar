@@ -27,7 +27,7 @@ int main(void) {
       printf("Codigo invalido!\n");
   }
 }
-    for (i=0; i<6; i++){
+    for (i=0; i<5; i++){
       printf("\nProduto: %s-", produtos[i]);
       printf("Quantidade de caixas: %d", contador[i]);
   }
