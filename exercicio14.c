@@ -17,19 +17,19 @@ int main(){
 	switch(op){
 		case 1:
 			resultado = num1 + num2;
-			printf("A soma dos numeros %1.f e %1.5f é de %1.f\n",num1, num2, resultado );
+			printf("A soma dos numeros %.1f e %.1f é de %.1f\n",num1, num2, resultado );
 			break;
 		case 2:
 			resultado = num1 - num2;
-			printf("A subtração dos numeros %1.f e %1.f é de %1.f\n",num1, num2, resultado);
+			printf("A subtração dos numeros %.1f e %.1f é de %.1f\n",num1, num2, resultado);
 			break;
 		case 3:
 			resultado = num1 / num2;
-			printf("A divisão dos numeros %1.f e %1.f é de %1.f\n", num1, num2, resultado);
+			printf("A divisão dos numeros %.1f e %.1f é de %.1f\n", num1, num2, resultado);
 			break;
 		case 4:
 			resultado = num1 * num2;
-			printf("A multiplicação dos numeros %1.f e %1.f é %1.f\n", num1, num2,resultado);	
+			printf("A multiplicação dos numeros %.1f e %.1f é %.1f\n", num1, num2,resultado);	
 			break;
 		default:
 			printf("Opção invalida");
