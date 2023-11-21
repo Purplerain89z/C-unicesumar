@@ -28,17 +28,20 @@ void agendarConsulta(){
 	setlocale(LC_ALL, "");
 
 	int diaAgenda;
+	system("cls");
 	printf("Qual dia do mês você quer agendar?\n");
 	fflush(stdin);
 	scanf("%d", &diaAgenda);
 	
 	int horaAgenda;
+	system("cls");
 	printf("Qual hora do dia você quer agendar?\n");
 	fflush(stdin);
 	scanf("%d", &horaAgenda);
 	
 	if(verificarDisponibilidade(diaAgenda, horaAgenda)){
 		printf("Horário disponível\n");
+		system("cls");
 		printf("Vamos confirmar seu agendamento\n");
 		agenda[qtdAgendamento].dia = diaAgenda;
 		agenda[qtdAgendamento].hora = horaAgenda;
@@ -46,6 +49,7 @@ void agendarConsulta(){
 		fflush(stdin);
 		gets(agenda[qtdAgendamento].nome);
 		qtdAgendamento = qtdAgendamento + 1;
+		system("cls");
 		printf("Agendamento realizado!\n");
 	} else {
 		printf("Horário não disponível\n");
@@ -79,16 +83,20 @@ void main() {
 		
 		switch(opcao){
 			case 1 :{
+				system("cls");
 				agendarConsulta();
 			break;
-			}case 2 :{				
+			}case 2 :{	
+				system("cls");			
 				listarConsulta();
-			break;	
+			break;
 			}case 3 :{
+				system("cls");
 				printf("Saindo do programa...\n");
-			break;	
+			break;
 			}
 			default :{
+				system("cls");
 				printf("Opção inválida\n");
 			break;
 			}
