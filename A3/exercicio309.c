@@ -14,6 +14,7 @@ int main(){
         impar++;
     }
     while (num != 0);
+    
     printf("A quantidade de numeros par é: %d.\n",par);
     printf("A quantidade de numeros impar é de: %d.\n",impar);
     return(0);    
