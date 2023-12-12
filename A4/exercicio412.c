@@ -3,7 +3,7 @@ int main(){
     int vetorA[10];
     int i,acha,busca;
 
-    for (i=0;1<10;i++){
+    for (i=0;i<10;i++){
         printf("Digite o %d elemtno:",i);
         scanf("%d", &vetorA[i]);
     }
