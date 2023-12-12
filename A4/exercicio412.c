@@ -20,7 +20,7 @@ int main(){
         }
     }
     if (acha == 1)
-    print ("O elemento %d foi encontrado na posição %d.", busca,i);
+    printf("O elemento %d foi encontrado na posição %d.", busca,i);
     else 
     printf("O elemento não foi encontrado.");
     return(0);
