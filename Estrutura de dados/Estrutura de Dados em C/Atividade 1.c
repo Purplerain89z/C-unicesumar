@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "Portuguese");
+    //1. Defina uma variável x, do tipo inteiro, e uma variável y, do tipo ponteiro de inteiro.
+    int x;
+    int *y;
+    //2. Usuário deverá informar o valor 25 à variável x.
+    printf  ("Informe o valor de X : ");//usuario informa 25.
+    scanf ("%d", &x );
+    //3. Faça o ponteiro y apontar para o mesmo endereço da variável x.
+    y = &x;
+    //4. Altere o valor armazenado no endereço de y para 12.
+    *y = 12;
+    //5. Execute a operação y = y + 1.
+    y = y + 1;
+    //printf("%d\n", *y);
+    //6. Some 5 ao valor armazenado no endereço de y.
+    *y = *y + 5;
+    //7. Imprimir na tela: qual é o valor de x?
+    printf("O valor de de 'X' é %d\n", x);
+    //printf("%d", *y);
+
+return (0);
+}
