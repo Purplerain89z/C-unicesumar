@@ -7,6 +7,7 @@
 #define tamanho 20
 
 //Estrutura da Senha
+//armazena caracter e numero para formar a senha
 typedef struct tsenha
 {
     int numero;
@@ -14,6 +15,7 @@ typedef struct tsenha
 }tsenha;
 
 //Estrutura da Fila
+//usa os elementos da tsenha para formar a senha
 struct tfilabanco
 {
     tsenha dados[tamanho];
@@ -74,11 +76,13 @@ void fila_entrar(){
     }
     fila.dados[fila.fim].tipo = tipo;
     fila.dados[fila.fim].numero = proximo;
+    //um gera a senha e o outro coloca a senha gerada no fim da fila.
     proximo++;
     fila.fim++;
 }
 
 //Retirar o primeiro elemento da Fila de acordo com o caixa
+//algoritimo que forma a fila
 void fila_sair(){
     if (fila.ini == fila.fim){
         printf("\nFila Vazia, Mas Logo aparece alguém\n\n");
@@ -88,6 +92,7 @@ void fila_sair(){
         char tipoatendimento;
         printf("\nQual Caixa vai atender (1 a 4)?");
         scanf("%d", &caixa);
+        //swichcase que define a a senha coforme a nescessidade do cliente
         switch (caixa)
         {
         case 1:
@@ -108,6 +113,7 @@ void fila_sair(){
         int posicao = 0;
 
         //procura elemento do tidpo correspondente
+        //procura da senha especifica do atendimento caso não tenha ele atende o proximo.
         for (int i = 0; i< tamanho; i++){
             if (fila.dados[i].tipo == tipoatendimento){
                 posicao = i;
