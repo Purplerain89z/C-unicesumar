@@ -40,7 +40,7 @@ int main(){
     proximo = 1;
     fila.ini = 0;
     fila.fim = 0;
-    while (op = !0){
+    while (op != 0){
         system("cls");
         fila_mostrar();
         menu_mostrar();
