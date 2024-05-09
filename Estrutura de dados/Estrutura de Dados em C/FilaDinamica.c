@@ -24,3 +24,17 @@ void enfileira(){
         f->fim->prox = ptr;
     f->fim = ptr;    
 }
+
+//Desenfileirar
+
+// int desenfileirar(){
+//     NO* ptr = f->inicio;
+//     int dado;
+//     if ptr != NULL{
+//         f->inicio = ptr->prox;
+//         ptr -> prox = NULL;
+//         dado = ptr->dado;
+//         free(ptr);
+//         return dado;
+//     }
+// }
